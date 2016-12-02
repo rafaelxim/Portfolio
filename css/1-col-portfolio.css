@@ -1,0 +1,38 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	font-family: 'Josefin Slab', serif;
+	background-color: black;
+	color: white;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+#logo{
+	font-family: 'Tangerine', cursive;
+	font-size: 42px;
+}
+.navbar{
+	background-color: black;
+}
+h3{
+	font-weight: 700;
+	color: #286090;
+}
+#fade-in-1{
+	display: none;
+}
+#anim2, #anim3, #anim4, #anim5, #anim6{
+	opacity: 0;
+}
+#linkedin{
+	width: 30px;
+	float: right;
+}
