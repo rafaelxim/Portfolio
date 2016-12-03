@@ -9,6 +9,8 @@ body {
 	font-family: 'Josefin Slab', serif;
 	background-color: black;
 	color: white;
+	padding-top: 0px;
+
 }
 
 footer {
@@ -32,7 +34,57 @@ h3{
 #anim2, #anim3, #anim4, #anim5, #anim6{
 	opacity: 0;
 }
-#linkedin{
-	width: 30px;
-	float: right;
+#social{	
+	font-size: 25px;
+	margin-top: 13px;
+	
+}
+#navegacao{
+	position: fixed;
+	width: 100%;
+	background-color: orange;
+}
+a, a:hover, a:focus, a:visited{
+	color:white;
+	text-decoration: none;
+}
+.modal-content{
+	background-color: #3279b6;
+}
+#github-button{
+	background-color: #ca8404;
+}
+#code-icon{
+	font-size: 40px;	
+}
+.modal-body{
+	text-align: center;
+}
+.skills{
+	background-color: #3279b6;
+	
+}
+
+.skills-table{
+	margin: auto;
+}
+.skill-col{
+	text-align: center;
+}
+.last-row{
+	padding-bottom: 30px;
+}
+.menu-item{
+ 	font-size: 20px;
+ 	padding-right: 10px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;    
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: orange;
 }

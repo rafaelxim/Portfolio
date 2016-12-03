@@ -19,7 +19,7 @@
     <!-- Custom CSS -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-
+    
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
 
@@ -30,7 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-
+    <script src="https://use.fontawesome.com/1f4e70821c.js"></script>
     <script>
        
         $(document).ready(function(){             
@@ -59,140 +59,398 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-            <a class="navbar-brand" id= "logo" href="http://www.rherculano.hol.es">Rafael Herculano</a>
+<!-- modal1 -->
+<div id="modal1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Guitarra Fender</h4>
             </div>
-            <a href="https://www.linkedin.com/in/rafael-herculano-517013132"><img id="linkedin" src="assets/linkedin.png"></a>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/gfender.jpg" >
+                    </div>
+                    <div class="col-md-6">
+                        <p>Website with articles about Fender guitars. Used mainly as learning for Bootstrap, the site is responsive, developed with bootstrap, and PHP was used for connecting to the MySQL database to store the articles.</p>
+                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                        <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
+                        <a href="https://github.com/rafaelxim/GuitarraFender" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>                            
             </div>
-            <!-- /.navbar-collapse -->
+            <div class="modal-footer">
+                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+            </div>
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+</div>
+<!-- modal 2 -->
+<div id="modal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Fla Stats</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/flastats2.jpg" >
+                    </div>
+                    <div class="col-md-6">
+                        <p>News Portal of a brazilian soccer team. Development mainly done as learning for the Jquery library. The site has some Jquery plugins, such as dataTables and native JavaScript functions, as well as being a responsive site developed with Bootstrap.</p>
+                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                        <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
+                        <a href="https://github.com/rafaelxim/FlaStats" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>                            
+            </div>
+            <div class="modal-footer">
+                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal 3 -->
+ <div id="modal3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Restaurant template</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/restaurante2.jpg" >
+                    </div>
+                    <div class="col-md-6">
+                        <p>This is a bootstrape template. Used mainly as learning for Bootstrap and Jquery, the site is responsive and has Jquery plugins, JqueryEase and JqueryColor to make it dynamic and Single Page Application.</p>
+                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                        <p>  HTML - CSS - Jquery - Bootstrap</p>
+                        <a href="https://github.com/rafaelxim/RestaurantTemplate" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>                            
+            </div>
+            <div class="modal-footer">
+                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal 4 -->
+<div id="modal4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Cidade do Papel</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/cidade2.jpg" >
+                    </div>
+                    <div class="col-md-6">
+                        <p>Commercial website of a stationery store, mainly used for didactic purposes in learning Jquery and Bootstrap.
+                        The page is totally responsive, uses some features of Bootstrap as the Carousel, presents some animations made with CSS to make the page more dynamic. There is communication with Database using MySQL for storing data of the "contact us" section, made with the PHP language.</p>
+                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                        <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
+                        <a href="https://github.com/rafaelxim/CidadeDoPapel" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>                            
+            </div>
+            <div class="modal-footer">
+                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal 5 -->
+<div id="modal5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Guitarra Fender</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/leilao2.jpg" >
+                    </div>
+                    <div class="col-md-6">
+                        <p>Auction website template. Used mainly as learning for Bootstrap, the template is responsive. It had an extensive use of CSS like gradients and transparencies.</p>
+                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                        <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
+                        <a href="https://github.com/rafaelxim/GuitarraFender" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>                            
+            </div>
+            <div class="modal-footer">
+                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal6 -->
+<div id="modal6" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">GOT Browser Game</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/got2.jpg" >
+                    </div>
+                    <div class="col-md-6">
+                        <p>A Game of Thrones inspired browser game, developed while learning Node.js and MongoDB at Udemy. Use of Consign, Express, BodyParser and Mongodb modules.</p>
+                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                        <p>  HTML - CSS - Jquery - Node.js - MongoDB</p>
+                        <a href="https://github.com/rafaelxim/Mmorpg_got" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>                            
+            </div>
+            <div class="modal-footer">
+                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Page Content -->
-    <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id= "logo" href="http://www.rherculano.hol.es">Rafael Herculano</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#projectlink">Portfolio <span class="sr-only">(current)</span></a></li>
+        <li><a href="#skillslink">Skills</a></li>        
+      </ul>      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a target="_blank" href="https://www.linkedin.com/in/rafael-herculano-517013132"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/rafs55"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.twitter.com/rafs55" ><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container">       
         <!-- Page Heading -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header" style="margin-top: 10px">Projects                
+            <div class="col-md-8 col-md-offset-2">
+                <h1 id="projectlink" class="text-center"  style="padding-top: 70px">Portfolio                
                 </h1>
-                
+                <hr>
             </div>
+
         </div>
+
         <!-- /.row -->
 
         <!-- Project One -->
 
-        <div class="row">
-            <div class="col-md-3">
-                <a href="http://www.rherculano.hol.es/FenderProducao" target="_blank">
-                    <img  id="fade-in-1" class="img-responsive" src="assets/gf.JPG" alt="">
-                </a>
+        <div class="row projects-row">
+            <div class="col-md-3">                
+                    <img  id="fade-in-1" class="img-responsive" src="assets/gf.JPG" alt="">                
             </div>
             <div id="anim2" class="col-md-3">
                 <h3>GuitarraFender</h3> <span class="social social-linked-in"></span>
                 <h4>Articles</h4>
                 <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>      
-                <p>Back-End: PHP - MySQL - SQL Queries</p>
-                <a class="btn btn-primary" href="http://www.rherculano.hol.es/FenderProducao" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>   
-
+                <p>Back-End: PHP - MySQL</p>
+                <button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-primary">View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>
             <!-- Project Two -->        
-            <div class="col-md-3">
-                <a href="http://www.rherculano.hol.es/Flastats" target="_blank">
-                    <img id="anim3" class="img-responsive" src="assets/flastats.JPG" alt="" >
-                </a>
+            <div class="col-md-3">                
+                    <img id="anim3" class="img-responsive" src="assets/flastats.JPG" alt="" >                
             </div>
             <div id="anim4" class="col-md-3">
                 <h3>FlaStats</h3>
                 <h4>Soccer News</h4>
                 <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>      
                 <p>Back-End: PHP - MySQL - SQL Queries</p>
-                <a class="btn btn-primary" href="http://www.rherculano.hol.es/Flastats" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <button type="button"  data-toggle="modal" data-target="#modal2" class="btn btn-primary">View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
             </div>
+           
+                
         </div>
+        
         <!-- /.row -->
 
-        <hr>
+        
+
 
         <!-- Project Three -->
         <div id="anim5" class="row">
-            <div class="col-md-3">
-                <a href="http://www.rherculano.hol.es/Restaurante" target="_blank">
-                    <img class="img-responsive" src="assets/restaurante.JPG" alt="">
-                </a>
+            <div class="col-md-3">               
+                    <img class="img-responsive" src="assets/restaurante.JPG" alt="">                
             </div>
             <div class="col-md-3">
                 <h3>Restaurant Template</h3>
                 <h4>Templates</h4>
                 <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>
-                <a class="btn btn-primary" href="http://www.rherculano.hol.es/Restaurante">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>      
-
+                <button type="button"  data-toggle="modal" data-target="#modal3" class="btn btn-primary" >View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>     
+            
+           
              <!-- Project Four -->    
-            <div class="col-md-3">
-                <a href="http://www.rherculano.hol.es/cidadedopapel" target="_blank">
-                    <img class="img-responsive" src="assets/cidadedopapel.JPG" alt="">
-                </a>
+            <div class="col-md-3">                
+                    <img class="img-responsive" src="assets/cidadedopapel.JPG" alt="">                
             </div>
             <div class="col-md-3">
                 <h3>CidadeDoPapel</h3>
                 <h4>Stationary Store Website</h4>
                 <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>      
                 <p>Back-End: PHP - MySQL - SQL Queries</p>
-                <a class="btn btn-primary" href="http://www.rherculano.hol.es/cidadedopapel">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
+               <button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-primary">View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>  
         </div>
         <!-- /.row -->
 
-        <hr>
+       
 
         <!-- Project Five -->
-        <div id="anim6" class="row">
-            <div class="col-md-3">
-                <a href="http://www.rherculano.hol.es/leiloes" target="_blank">
-                    <img  class="img-responsive" src="assets/leilao.JPG" alt="">
-                </a>
+        <div id="anim6" class="row last-row">
+            <div class="col-md-3">              
+                    <img  class="img-responsive" src="assets/leilao.JPG" alt="">                
             </div>
             <div class="col-md-3">
-                <h3>Auction website</h3>
+                <h3>Auction website template</h3>
                 <h4>Templates</h4>
                 <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>   
-                <a class="btn btn-primary" href="http://www.rherculano.hol.es/leiloes">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>        
+                <button type="button" data-toggle="modal" data-target="#modal5" class="btn btn-primary" >View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>                      
               <!-- Project Six -->        
-            <div class="col-md-3">
-                <a href="http://www.rherculano.hol.es/Soccerplus" target="_blank">
-                    <img class="img-responsive" src="assets/futmais.jpg" alt="">
-                </a>
+            <div class="col-md-3">                
+                    <img class="img-responsive" src="assets/got.jpg" alt="">               
             </div>
             <div class="col-md-3">
-                <h3>Soccer Videos</h3>
+                <h3>Game of Thrones</h3>
                 <h4>Templates</h4>
                 <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>   
-                <a class="btn btn-primary" href="http://www.rherculano.hol.es/Soccerplus">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <button type="button"  data-toggle="modal" data-target="#modal6" class="btn btn-primary" >View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>
+            <!-- modal -->
+    </div>
+    <!-- /.container -->        
+        </div>
+        <div class="row skills">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 id='skillslink' class="text-center">Programming Skills</h1>
+                <hr>
+            </div>  
+    
+        </div>
+        <div  class="row skills">
+            <div class="skill-col col-md-4 col-md-offset-2">
+            <table class='skills-table'>
+                <tr>
+                    <td>HTML</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>    
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                         
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>jQuery</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                          
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>                          
+                    </td>                    
+                </tr>
+            </table>                
+            </div>
+            <div  class="skill-col col-md-4">
+                <table class="skills-table">
+                <tr>
+                    <td>PHP</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                          
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>                          
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>MongoDB</td>
+                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>                         
+                    </td>                    
+                </tr>
+            </table> 
             </div>
         </div>
-        <!-- /.row -->
-        <hr>     
-       
-        <!-- Footer -->
-        <footer>
-            
-            <!-- /.row -->
-        </footer>
+        <!-- /.row -->    
 
-    </div>
-    <!-- /.container -->
+        <footer class="footer">
+            <div style="text-align: right;" class="container">
+                <p>Rafael Herculano @ 2016. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- Footer -->
+    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -201,8 +459,5 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
-<script>
-    
 
-</script>
 </html>
