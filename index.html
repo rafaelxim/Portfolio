@@ -37,10 +37,11 @@
             $('#fade-in-1').fadeIn('slow', function(){
                 $('#anim2').addClass('animated bounceInLeft').css('opacity','1');
                 $('#anim2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                    $('#anim3').addClass('animated flipInX').css('opacity','1');                        
+                    $('#anim3').addClass('animated flipInX').css('opacity','1');                                            
                 });
             }); 
            $('#anim3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $('#anim3').removeClass('animated flipInX'); 
                 $('#anim4').addClass('animated slideInRight').css('opacity','1');
             });      
              $('#anim4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -53,7 +54,25 @@
                 $(this).addClass('animated flash');
             },function(){
                 $(this).removeClass('animated flash');
-            })                          
+            })  
+
+            $('.prj').hover(function(){
+                $(this).find('.view_project').addClass('animated flash infinite');
+                $(this).find('.img_com_bordas').addClass('animated pulse infinite');
+            },function(){
+                $(this).find('.view_project').removeClass('animated flash infinite');
+                $(this).find('.img_com_bordas').removeClass('animated pulse infinite');
+            })
+            $("#skillmenu").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#skillslink").offset().top
+                }, 2000);
+            });   
+            $("#portfoliomenu").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#portfoliolink").offset().top
+                }, 2000);
+            });                    
         })
     </script>
 </head>
@@ -245,8 +264,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#projectlink">Portfolio <span class="sr-only">(current)</span></a></li>
-        <li><a href="#skillslink">Skills</a></li>        
+        <li id="portfoliomenu" class="hvr-rectangle-in"><a>Portfolio <span class="sr-only">(current)</span></a></li>
+        <li id="skillmenu" class="hvr-rectangle-in"><a>Skills</a></li>        
       </ul>      
       <ul class="nav navbar-nav navbar-right">
         <li><a target="_blank" href="https://www.linkedin.com/in/rafael-herculano-517013132"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -261,7 +280,7 @@
         <!-- Page Heading -->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h1 id="projectlink" class="text-center"  style="padding-top: 70px">Portfolio                
+                <h1 id="portfoliolink" class="text-center"  style="padding-top: 70px">Portfolio                
                 </h1>
                 <hr>
             </div>
@@ -273,90 +292,85 @@
         <!-- Project One -->
 
         <div class="row projects-row">
-            <div class="col-md-3">                
-                    <img  id="fade-in-1" class="img-responsive" src="assets/gf.JPG" alt="">                
+            <div class="prj">
+                <div class="col-md-3">                
+                        <img data-toggle="modal" data-target="#modal1" id="fade-in-1" class="img-responsive img_com_bordas" src="assets/gf.JPG" alt="">                
+                </div>
+                <div id="anim2" class="col-md-3">
+                    <h3 class="titulo_projeto">GuitarraFender</h3> <span class="social social-linked-in"></span>
+                    <h4>Fender Articles</h4>                
+                    <span class="view_project" data-toggle="modal" data-target="#modal1">View Project <i class="fa fa-code"></i></span>               
+                </div>
             </div>
-            <div id="anim2" class="col-md-3">
-                <h3>GuitarraFender</h3> <span class="social social-linked-in"></span>
-                <h4>Articles</h4>
-                <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>      
-                <p>Back-End: PHP - MySQL</p>
-                <button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-primary">View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+            <!-- Project Two -->  
+            <div class="prj">      
+                <div class="col-md-3">                
+                        <img data-toggle="modal" data-target="#modal2" id="anim3" class="img-responsive img_com_bordas" src="assets/flastats.JPG" alt="" >                
+                </div>
+                <div id="anim4" class="col-md-3">
+                    <h3 class="titulo_projeto">FlaStats</h3>
+                    <h4>Soccer News</h4>                
+                     <span class="view_project" data-toggle="modal" data-target="#modal2">View Project <i class="fa fa-code"></i></span>
+                </div>
             </div>
-            <!-- Project Two -->        
-            <div class="col-md-3">                
-                    <img id="anim3" class="img-responsive" src="assets/flastats.JPG" alt="" >                
-            </div>
-            <div id="anim4" class="col-md-3">
-                <h3>FlaStats</h3>
-                <h4>Soccer News</h4>
-                <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>      
-                <p>Back-End: PHP - MySQL - SQL Queries</p>
-                <button type="button"  data-toggle="modal" data-target="#modal2" class="btn btn-primary">View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </div>
-           
-                
-        </div>
-        
-        <!-- /.row -->
 
-        
-
-
+        </div> 
+        <hr>  
+    
         <!-- Project Three -->
         <div id="anim5" class="row">
-            <div class="col-md-3">               
-                    <img class="img-responsive" src="assets/restaurante.JPG" alt="">                
+            <div class="prj">
+                <div class="col-md-3">               
+                        <img data-toggle="modal" data-target="#modal3" class="img-responsive img_com_bordas" src="assets/restaurante.JPG" alt="">                
+                </div>
+                <div class="col-md-3">
+                    <h3 class="titulo_projeto">Restaurant</h3>
+                    <h4>Template</h4>                
+                     <span class="view_project" data-toggle="modal" data-target="#modal3">View Project <i class="fa fa-code"></i></span>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h3>Restaurant Template</h3>
-                <h4>Templates</h4>
-                <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>
-                <button type="button"  data-toggle="modal" data-target="#modal3" class="btn btn-primary" >View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </div>     
-            
-           
-             <!-- Project Four -->    
-            <div class="col-md-3">                
-                    <img class="img-responsive" src="assets/cidadedopapel.JPG" alt="">                
+             <!-- Project Four -->  
+            <div class="prj">  
+                <div class="col-md-3">                
+                        <img data-toggle="modal" data-target="#modal4" class="img-responsive img_com_bordas" src="assets/cidadedopapel.JPG" alt="">                
+                </div>
+                <div class="col-md-3">
+                    <h3 class="titulo_projeto">CidadeDoPapel</h3>
+                    <h4>Stationary Store Website</h4>                
+                    <span class="view_project" data-toggle="modal" data-target="#modal4">View Project <i class="fa fa-code"></i></span>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h3>CidadeDoPapel</h3>
-                <h4>Stationary Store Website</h4>
-                <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>      
-                <p>Back-End: PHP - MySQL - SQL Queries</p>
-               <button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-primary">View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </div>  
-        </div>
-        <!-- /.row -->
-
-       
-
+        </div>  
+        <hr> 
         <!-- Project Five -->
-        <div id="anim6" class="row last-row">
-            <div class="col-md-3">              
-                    <img  class="img-responsive" src="assets/leilao.JPG" alt="">                
+        <div  id="anim6" class="row last-row">
+            <div class="prj">
+                <div class="col-md-3">              
+                        <img data-toggle="modal" data-target="#modal5" class="img-responsive img_com_bordas" src="assets/leilao.JPG" alt="">                
+                </div>
+                <div class="col-md-3">
+                    <h3 class="titulo_projeto">Auction website template</h3>                 
+                     <span class="view_project" data-toggle="modal" data-target="#modal5">View Project <i class="fa fa-code"></i></span>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h3>Auction website template</h3>
-                <h4>Templates</h4>
-                <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>   
-                <button type="button" data-toggle="modal" data-target="#modal5" class="btn btn-primary" >View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </div>                      
-              <!-- Project Six -->        
-            <div class="col-md-3">                
-                    <img class="img-responsive" src="assets/got.jpg" alt="">               
-            </div>
-            <div class="col-md-3">
-                <h3>Game of Thrones</h3>
-                <h4>Templates</h4>
-                <p>Front-End: HTML - CSS - Jquery - Bootstrap</p>   
-                <button type="button"  data-toggle="modal" data-target="#modal6" class="btn btn-primary" >View Project <span class="glyphicon glyphicon-chevron-right"></span></button>
+         
+
+              <!-- Project Six -->  
+            <div class="prj">
+                <div class="col-md-3">                
+                        <img data-toggle="modal" data-target="#modal6" class="img-responsive img_com_bordas" src="assets/got.jpg" alt="">               
+                </div>
+                <div class="col-md-3">
+                    <h3 class="titulo_projeto">Game of Thrones</h3>
+                    <h4>Browser Game</h4>                  
+                    <span class="view_project" data-toggle="modal" data-target="#modal6">View Project <i class="fa fa-code"></i></span>
+                </div>
             </div>
             <!-- modal -->
-    </div>
-    <!-- /.container -->        
         </div>
+    <!-- /.container -->        
+    </div>
+        <div class="transition"></div>
         <div class="row skills">
             <div class="col-md-8 col-md-offset-2">
                 <h1 id='skillslink' class="text-center">Programming Skills</h1>
