@@ -28,94 +28,51 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/1f4e70821c.js"></script>
-    <script>
-       
-        $(document).ready(function(){             
-            $('#fade-in-1').fadeIn('slow', function(){
-                $('#anim2').addClass('animated bounceInLeft').css('opacity','1');
-                $('#anim2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                    $('#anim3').addClass('animated flipInX').css('opacity','1');                                            
-                });
-            }); 
-           $('#anim3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $('#anim3').removeClass('animated flipInX'); 
-                $('#anim4').addClass('animated slideInRight').css('opacity','1');
-            });      
-             $('#anim4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $('#anim5').addClass('animated zoomIn').css('opacity','1');
-             })   
-            $('#anim5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $('#anim6').addClass('animated fadeInUp').css('opacity','1');
-            }) 
-            $('.btn').hover(function(){
-                $(this).addClass('animated flash');
-            },function(){
-                $(this).removeClass('animated flash');
-            })  
+        <![endif]-->
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/1f4e70821c.js"></script>
+        <script src="js/myjs.js"> </script>
+    </head>
 
-            $('.prj').hover(function(){
-                $(this).find('.view_project').addClass('animated flash infinite');
-                $(this).find('.img_com_bordas').addClass('animated pulse infinite');
-            },function(){
-                $(this).find('.view_project').removeClass('animated flash infinite');
-                $(this).find('.img_com_bordas').removeClass('animated pulse infinite');
-            })
-            $("#skillmenu").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#skillslink").offset().top
-                }, 2000);
-            });   
-            $("#portfoliomenu").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#portfoliolink").offset().top
-                }, 2000);
-            });                    
-        })
-    </script>
-</head>
-
-<body>
-<!-- modal1 -->
-<div id="modal1" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-            <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Guitarra Fender</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/gfender.jpg" >
-                    </div>
-                    <div class="col-md-6">
-                        <p>Website with articles about Fender guitars. Used mainly as learning for Bootstrap, the site is responsive, developed with bootstrap, and PHP was used for connecting to the MySQL database to store the articles.</p>
-                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
-                        <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
-                        <a href="https://github.com/rafaelxim/GuitarraFender" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
-                    </div>
-                </div>                            
-            </div>
-            <div class="modal-footer">
-                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+    <body>
+        <!-- modal1 -->
+        <div id="modal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Guitarra Fender</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="assets/gfender.jpg" >
+                        </div>
+                        <div class="col-md-6">
+                            <p>Website with articles about Fender guitars. Used mainly as learning for Bootstrap, the site is responsive, developed with bootstrap, and PHP was used for connecting to the MySQL database to store the articles.</p>
+                            <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                            <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
+                            <a href="https://github.com/rafaelxim/GuitarraFender" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                        </div>
+                    </div>                            
+                </div>
+                <div class="modal-footer">
+                    <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- modal 2 -->
-<div id="modal2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+    <!-- modal 2 -->
+    <div id="modal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
             <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Fla Stats</h4>
-            </div>
-            <div class="modal-body">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Fla Stats</h4>
+              </div>
+              <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
                         <img class="img-responsive" src="assets/flastats2.jpg" >
@@ -135,49 +92,49 @@
     </div>
 </div>
 <!-- modal 3 -->
- <div id="modal3" class="modal fade" role="dialog">
+<div id="modal3" class="modal fade" role="dialog">
     <div class="modal-dialog">
-            <!-- Modal content-->
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Restaurant template</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/restaurante2.jpg" >
-                    </div>
-                    <div class="col-md-6">
-                        <p>This is a bootstrape template. Used mainly as learning for Bootstrap and Jquery, the site is responsive and has Jquery plugins, JqueryEase and JqueryColor to make it dynamic and Single Page Application.</p>
-                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
-                        <p>  HTML - CSS - Jquery - Bootstrap</p>
-                        <a href="https://github.com/rafaelxim/RestaurantTemplate" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
-                    </div>
-                </div>                            
-            </div>
-            <div class="modal-footer">
-                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
-            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/restaurante2.jpg" >
+                </div>
+                <div class="col-md-6">
+                    <p>This is a bootstrape template. Used mainly as learning for Bootstrap and Jquery, the site is responsive and has Jquery plugins, JqueryEase and JqueryColor to make it dynamic and Single Page Application.</p>
+                    <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                    <p>  HTML - CSS - Jquery - Bootstrap</p>
+                    <a href="https://github.com/rafaelxim/RestaurantTemplate" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
         </div>
     </div>
+</div>
 </div>
 <!-- modal 4 -->
 <div id="modal4" class="modal fade" role="dialog">
     <div class="modal-dialog">
-            <!-- Modal content-->
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Cidade do Papel</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/cidade2.jpg" >
-                    </div>
-                    <div class="col-md-6">
-                        <p>Commercial website of a stationery store, mainly used for didactic purposes in learning Jquery and Bootstrap.
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/cidade2.jpg" >
+                </div>
+                <div class="col-md-6">
+                    <p>Commercial website of a stationery store, mainly used for didactic purposes in learning Jquery and Bootstrap.
                         The page is totally responsive, uses some features of Bootstrap as the Carousel, presents some animations made with CSS to make the page more dynamic. There is communication with Database using MySQL for storing data of the "contact us" section, made with the PHP language.</p>
                         <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
                         <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
@@ -194,58 +151,270 @@
 <!-- modal 5 -->
 <div id="modal5" class="modal fade" role="dialog">
     <div class="modal-dialog">
-            <!-- Modal content-->
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Guitarra Fender</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/leilao2.jpg" >
-                    </div>
-                    <div class="col-md-6">
-                        <p>Auction website template. Used mainly as learning for Bootstrap, the template is responsive. It had an extensive use of CSS like gradients and transparencies.</p>
-                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
-                        <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
-                        <a href="https://github.com/rafaelxim/GuitarraFender" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
-                    </div>
-                </div>                            
-            </div>
-            <div class="modal-footer">
-                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
-            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/leilao2.jpg" >
+                </div>
+                <div class="col-md-6">
+                    <p>Auction website template. Used mainly as learning for Bootstrap, the template is responsive. It had an extensive use of CSS like gradients and transparencies.</p>
+                    <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                    <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL</p>
+                    <a href="https://github.com/rafaelxim/GuitarraFender" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
         </div>
     </div>
+</div>
 </div>
 <!-- modal6 -->
 <div id="modal6" class="modal fade" role="dialog">
     <div class="modal-dialog">
-            <!-- Modal content-->
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">GOT Browser Game</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/got2.jpg" >
-                    </div>
-                    <div class="col-md-6">
-                        <p>A Game of Thrones inspired browser game, developed while learning Node.js and MongoDB at Udemy. Use of Consign, Express, BodyParser and Mongodb modules.</p>
-                        <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
-                        <p>  HTML - CSS - Jquery - Node.js - MongoDB</p>
-                        <a href="https://github.com/rafaelxim/Mmorpg_got" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
-                    </div>
-                </div>                            
-            </div>
-            <div class="modal-footer">
-                <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
-            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/got2.jpg" >
+                </div>
+                <div class="col-md-6">
+                    <p>A Game of Thrones inspired browser game, developed while learning Node.js and MongoDB at Udemy. Use of Consign, Express, BodyParser and Mongodb modules.</p>
+                    <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                    <p>  HTML - CSS - Jquery - Node.js - MongoDB</p>
+                    <a href="https://github.com/rafaelxim/Mmorpg_got" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
         </div>
     </div>
+</div>
+</div>
+
+<!-- modalReverse -->
+<div id="modalReverse" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Reverse a String</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a string:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="invertString" placeholder="String">
+                    <button type="button" id="buttonInvert" class="btn btn-success">Send</button>
+
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalFactorialize -->
+<div id="modalFactorialize" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Factorialize</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a number:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="factorializeNumber" placeholder="Number">
+                    <button type="button" id="buttonFactorialize" class="btn btn-success">Calculate</button>
+
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalPalindrome -->
+<div id="modalPalindrome" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Check Palindrome</h4>
+              <h5>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing. </h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a string:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="palindromeInput" placeholder="String">
+                    <button type="button" id="palindromeButton" class="btn btn-success">Check</button>
+
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalEnding -->
+<div id="modalEnding" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Check the Ending</h4>
+              <h5>Check if a string (first input) ends with the given target string (second input). </h5>
+          </div>
+          <div class="modal-body" style="text-align: left">
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a string:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="endingInput" placeholder="String">                   
+
+                </div>
+            </div>   
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a possible string ending:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="endingInput2" placeholder="String">
+                    <button type="button" id="endingButton" class="btn btn-success">Check</button>
+                </div>
+            </div>                           
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalRepeat -->
+<div id="modalRepeat" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Repeat String</h4>              
+          </div>
+          <div class="modal-body" style="text-align: left;">
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a string:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="repeatInput" placeholder="String">                   
+
+                </div>
+            </div>   
+            <div class="row">
+                <div class="col-md-6">
+                    Insert how many times you want to repeat the string:
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="repeatInput2" placeholder="String">
+                    <button type="button" id="repeatButton" class="btn btn-success">Repeat</button>
+                </div>
+            </div>                               
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalLongest -->
+<div id="modalLongest" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Longest Word in a String</h4>              
+          </div>
+          <div class="modal-body" style="text-align: left;">             
+            <div class="row">
+                <div class="col-md-6">
+                    Return the length of the longest word in the provided sentence.
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="longestInput" placeholder="String">
+                    <button type="button" id="longestButton" class="btn btn-success">Check</button>
+                </div>
+            </div>                               
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalTitle -->
+<div id="modalTitle" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Title Case a Sentence</h4>              
+          </div>
+          <div class="modal-body" style="text-align: left;">             
+            <div class="row">
+                <div class="col-md-6">
+                    Return the provided string with the first letter of each word capitalized.
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="titleInput" placeholder="String">
+                    <button type="button" id="titleButton" class="btn btn-success">Convert</button>
+                </div>
+            </div>                               
+        </div>
+        <div class="modal-footer ">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -257,221 +426,265 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" id= "logo" href="http://www.rherculano.hol.es">Rafael Herculano</a>
-    </div>
+    </button>
+    <a class="navbar-brand" id= "logo" href="http://www.rherculano.hol.es">Rafael Herculano</a>
+</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li id="portfoliomenu" class="hvr-rectangle-in"><a>Portfolio <span class="sr-only">(current)</span></a></li>
-        <li id="skillmenu" class="hvr-rectangle-in"><a>Skills</a></li>        
-      </ul>      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a target="_blank" href="https://www.linkedin.com/in/rafael-herculano-517013132"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li><a target="_blank" href="https://www.facebook.com/rafs55"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a target="_blank" href="https://www.twitter.com/rafs55" ><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+    <li id="portfoliomenu" class="hvr-rectangle-in"><a>Portfolio <span class="sr-only">(current)</span></a></li>
+    <li id="skillmenu" class="hvr-rectangle-in"><a>Skills</a></li> 
+    <li id="jsmenu" class="hvr-rectangle-in"><a>Javascript</a></li>         
+</ul>      
+<ul class="nav navbar-nav navbar-right">
+    <li><a target="_blank" href="https://www.linkedin.com/in/rafael-herculano-517013132"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a target="_blank" href="https://www.facebook.com/rafs55"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a target="_blank" href="https://www.twitter.com/rafs55" ><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
 </nav>
 
-    <div class="container">       
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1 id="portfoliolink" class="text-center"  style="padding-top: 70px">Portfolio                
-                </h1>
-                <hr>
-            </div>
-
+<div class="container">       
+    <!-- Page Heading -->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 id="portfoliolink" class="text-center"  style="padding-top: 70px">Portfolio                
+            </h1>
+            <hr>
         </div>
 
-        <!-- /.row -->
-
-        <!-- Project One -->
-
-        <div class="row projects-row">
-            <div class="prj">
-                <div class="col-md-3">                
-                        <img data-toggle="modal" data-target="#modal1" id="fade-in-1" class="img-responsive img_com_bordas" src="assets/gf.JPG" alt="">                
-                </div>
-                <div id="anim2" class="col-md-3">
-                    <h3 class="titulo_projeto">GuitarraFender</h3> <span class="social social-linked-in"></span>
-                    <h4>Fender Articles</h4>                
-                    <span class="view_project" data-toggle="modal" data-target="#modal1">View Project <i class="fa fa-code"></i></span>               
-                </div>
-            </div>
-            <!-- Project Two -->  
-            <div class="prj">      
-                <div class="col-md-3">                
-                        <img data-toggle="modal" data-target="#modal2" id="anim3" class="img-responsive img_com_bordas" src="assets/flastats.JPG" alt="" >                
-                </div>
-                <div id="anim4" class="col-md-3">
-                    <h3 class="titulo_projeto">FlaStats</h3>
-                    <h4>Soccer News</h4>                
-                     <span class="view_project" data-toggle="modal" data-target="#modal2">View Project <i class="fa fa-code"></i></span>
-                </div>
-            </div>
-
-        </div> 
-        <hr>  
-    
-        <!-- Project Three -->
-        <div id="anim5" class="row">
-            <div class="prj">
-                <div class="col-md-3">               
-                        <img data-toggle="modal" data-target="#modal3" class="img-responsive img_com_bordas" src="assets/restaurante.JPG" alt="">                
-                </div>
-                <div class="col-md-3">
-                    <h3 class="titulo_projeto">Restaurant</h3>
-                    <h4>Template</h4>                
-                     <span class="view_project" data-toggle="modal" data-target="#modal3">View Project <i class="fa fa-code"></i></span>
-                </div>
-            </div>
-             <!-- Project Four -->  
-            <div class="prj">  
-                <div class="col-md-3">                
-                        <img data-toggle="modal" data-target="#modal4" class="img-responsive img_com_bordas" src="assets/cidadedopapel.JPG" alt="">                
-                </div>
-                <div class="col-md-3">
-                    <h3 class="titulo_projeto">CidadeDoPapel</h3>
-                    <h4>Stationary Store Website</h4>                
-                    <span class="view_project" data-toggle="modal" data-target="#modal4">View Project <i class="fa fa-code"></i></span>
-                </div>
-            </div>
-        </div>  
-        <hr> 
-        <!-- Project Five -->
-        <div  id="anim6" class="row last-row">
-            <div class="prj">
-                <div class="col-md-3">              
-                        <img data-toggle="modal" data-target="#modal5" class="img-responsive img_com_bordas" src="assets/leilao.JPG" alt="">                
-                </div>
-                <div class="col-md-3">
-                    <h3 class="titulo_projeto">Auction website template</h3>                 
-                     <span class="view_project" data-toggle="modal" data-target="#modal5">View Project <i class="fa fa-code"></i></span>
-                </div>
-            </div>
-         
-
-              <!-- Project Six -->  
-            <div class="prj">
-                <div class="col-md-3">                
-                        <img data-toggle="modal" data-target="#modal6" class="img-responsive img_com_bordas" src="assets/got.jpg" alt="">               
-                </div>
-                <div class="col-md-3">
-                    <h3 class="titulo_projeto">Game of Thrones</h3>
-                    <h4>Browser Game</h4>                  
-                    <span class="view_project" data-toggle="modal" data-target="#modal6">View Project <i class="fa fa-code"></i></span>
-                </div>
-            </div>
-            <!-- modal -->
-        </div>
-    <!-- /.container -->        
     </div>
-        <div class="transition"></div>
-        <div class="row skills">
-            <div class="col-md-8 col-md-offset-2">
-                <h1 id='skillslink' class="text-center">Programming Skills</h1>
-                <hr>
-            </div>  
-    
-        </div>
-        <div  class="row skills">
-            <div class="skill-col col-md-4 col-md-offset-2">
-            <table class='skills-table'>
-                <tr>
-                    <td>HTML</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>    
-                    </td>                    
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                         
-                    </td>                    
-                </tr>
-                <tr>
-                    <td>jQuery</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                          
-                    </td>                    
-                </tr>
-                <tr>
-                    <td>Bootstrap</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>                          
-                    </td>                    
-                </tr>
-            </table>                
+
+    <!-- /.row -->
+
+    <!-- Project One -->
+
+    <div class="row projects-row">
+        <div class="prj">
+            <div class="col-md-3">                
+                <img data-toggle="modal" data-target="#modal1" id="fade-in-1" class="img-responsive img_com_bordas" src="assets/gf.JPG" alt="">                
             </div>
-            <div  class="skill-col col-md-4">
-                <table class="skills-table">
-                <tr>
-                    <td>PHP</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        
-                    </td>                    
-                </tr>
-                <tr>
-                    <td>MySQL</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                          
-                    </td>                    
-                </tr>
-                <tr>
-                    <td>Node.js</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>                          
-                    </td>                    
-                </tr>
-                <tr>
-                    <td>MongoDB</td>
-                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>                         
-                    </td>                    
-                </tr>
-            </table> 
+            <div id="anim2" class="col-md-3">
+                <h3 class="titulo_projeto">GuitarraFender</h3> <span class="social social-linked-in"></span>
+                <h4>Fender Articles</h4>                
+                <span class="view_project" data-toggle="modal" data-target="#modal1">View Project <i class="fa fa-code"></i></span>               
             </div>
         </div>
-        <!-- /.row -->    
-
-        <footer class="footer">
-            <div style="text-align: right;" class="container">
-                <p>Rafael Herculano @ 2016. All Rights Reserved.</p>
+        <!-- Project Two -->  
+        <div class="prj">      
+            <div class="col-md-3">                
+                <img data-toggle="modal" data-target="#modal2" id="anim3" class="img-responsive img_com_bordas" src="assets/flastats.JPG" alt="" >                
             </div>
-        </footer>
-        <!-- Footer -->
+            <div id="anim4" class="col-md-3">
+                <h3 class="titulo_projeto">FlaStats</h3>
+                <h4>Soccer News</h4>                
+                <span class="view_project" data-toggle="modal" data-target="#modal2">View Project <i class="fa fa-code"></i></span>
+            </div>
+        </div>
+
+    </div> 
+    <hr>  
     
+    <!-- Project Three -->
+    <div id="anim5" class="row">
+        <div class="prj">
+            <div class="col-md-3">               
+                <img data-toggle="modal" data-target="#modal3" class="img-responsive img_com_bordas" src="assets/restaurante.JPG" alt="">                
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo_projeto">Restaurant</h3>
+                <h4>Template</h4>                
+                <span class="view_project" data-toggle="modal" data-target="#modal3">View Project <i class="fa fa-code"></i></span>
+            </div>
+        </div>
+        <!-- Project Four -->  
+        <div class="prj">  
+            <div class="col-md-3">                
+                <img data-toggle="modal" data-target="#modal4" class="img-responsive img_com_bordas" src="assets/cidadedopapel.JPG" alt="">                
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo_projeto">CidadeDoPapel</h3>
+                <h4>Stationary Store Website</h4>                
+                <span class="view_project" data-toggle="modal" data-target="#modal4">View Project <i class="fa fa-code"></i></span>
+            </div>
+        </div>
+    </div>  
+    <hr> 
+    <!-- Project Five -->
+    <div  id="anim6" class="row last-row">
+        <div class="prj">
+            <div class="col-md-3">              
+                <img data-toggle="modal" data-target="#modal5" class="img-responsive img_com_bordas" src="assets/leilao.JPG" alt="">                
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo_projeto">Auction website template</h3>                 
+                <span class="view_project" data-toggle="modal" data-target="#modal5">View Project <i class="fa fa-code"></i></span>
+            </div>
+        </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Project Six -->  
+        <div class="prj">
+            <div class="col-md-3">                
+                <img data-toggle="modal" data-target="#modal6" class="img-responsive img_com_bordas" src="assets/got.jpg" alt="">               
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo_projeto">Game of Thrones</h3>
+                <h4>Browser Game</h4>                  
+                <span class="view_project" data-toggle="modal" data-target="#modal6">View Project <i class="fa fa-code"></i></span>
+            </div>
+        </div>
+        <!-- modal -->
+    </div>
+    <!-- /.container -->        
+</div>
+<div class="transition"></div>
+<div class="row skills">
+    <div class="col-md-8 col-md-offset-2">
+        <h1 id='skillslink' class="text-center">Programming Skills</h1>
+        <hr>
+    </div>  
+    
+</div>
+<div  class="row skills">
+    <div class="skill-col col-md-4 col-md-offset-2">
+        <table class='skills-table'>
+            <tr>
+                <td>HTML</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>    
+                </td>                    
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
 
+                </td>                    
+            </tr>
+            <tr>
+                <td>jQuery</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </td>                    
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>                          
+                </td>                    
+            </tr>
+        </table>                
+    </div>
+    <div  class="skill-col col-md-4">
+        <table class="skills-table">
+            <tr>
+                <td>PHP</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </td>                    
+            </tr>
+            <tr>
+                <td>MySQL</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </td>                    
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>                          
+                </td>                    
+            </tr>
+            <tr>
+                <td>MongoDB</td>
+                <td><i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>                         
+                </td>                    
+            </tr>
+        </table> 
+    </div>
+</div>
+<!-- /.row -->    
+<div id="jslink" class="row jscript">
+<div class="opacBox">
+    <h1 class="text-center">Javascript Tools</h1>
+</div>
+<div class="col-md-3">
+    <div  data-toggle="modal" data-target="#modalReverse" class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Reverse a String </p>
+        <p class="text-center"><i class="fa fa-exchange" aria-hidden="true"></i></p>
+    </div>
+</div>
+<div class="col-md-3">
+    <div data-toggle="modal" data-target="#modalFactorialize" class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Factorialize a Number </p>
+        <p class="text-center"><i class="fa fa-exclamation" aria-hidden="true"></i></p>
+    </div>
+</div>
+<div class="col-md-3">
+    <div data-toggle="modal" data-target="#modalPalindrome" class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Check For Palindromes </p>
+        <p class="text-center"><i class="fa fa-eye" aria-hidden="true"></i></p>
+    </div>
+</div>
+<div class="col-md-3">
+    <div data-toggle="modal" data-target="#modalEnding"  class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Confirm The Ending</p>
+        <p class="text-center"><i class="fa fa-hourglass-end" aria-hidden="true"></i></p>
+    </div>
+</div>
+<div class="col-md-3">
+    <div data-toggle="modal" data-target="#modalRepeat" class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Repeat a String </p>
+        <p class="text-center"><i class="fa fa-repeat" aria-hidden="true"></i></i></p>
+    </div>
+</div>
+<div class="col-md-3">
+    <div data-toggle="modal" data-target="#modalLongest" class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Find The Longest Word In A String </p>
+        <p class="text-center"><i class="fa fa-list" aria-hidden="true"></i></p>
+    </div>
+</div>
+<div class="col-md-3">
+    <div data-toggle="modal" data-target="#modalTitle" class="jscripttool hvr-back-pulse">
+        <p class="text-center"> Title Case Sentence </p>
+        <p class="text-center"><i class="fa fa-black-tie" aria-hidden="true"></i></p>
+    </div>
+</div>
+</div>
+
+<footer class="footer">
+    <div style="text-align: right;" class="container">
+        <p>Rafael Herculano @ 2016. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Footer -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
