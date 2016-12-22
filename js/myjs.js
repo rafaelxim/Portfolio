@@ -97,6 +97,51 @@ function titleCase(str) {
   return newString;
 }
 
+function rot13(str) { // LBH QVQ VG!
+  //var str2=" ";
+  //console.log(str2.charCodeAt(0));
+  //console.log(String.fromCharCode(83)); 
+  var tamanho=str.length;
+  for (var i=0; i<tamanho; i++){
+    var code = str.charCodeAt(i);    
+    if(code >64 && code<91){
+      switch(code){
+          case 65: str=str+String.fromCharCode(78); break;
+          case 66: str=str+String.fromCharCode(79); break;
+          case 67: str=str+String.fromCharCode(80); break;
+          case 68: str=str+String.fromCharCode(81); break;
+          case 69: str=str+String.fromCharCode(82); break;
+          case 70: str=str+String.fromCharCode(83); break;
+          case 71: str=str+String.fromCharCode(84); break;
+          case 72: str=str+String.fromCharCode(85); break;
+          case 73: str=str+String.fromCharCode(86); break;
+          case 74: str=str+String.fromCharCode(87); break;
+          case 75: str=str+String.fromCharCode(88); break;
+          case 76: str=str+String.fromCharCode(89); break;
+          case 77: str=str+String.fromCharCode(90); break;          
+          case 78: str=str+String.fromCharCode(65); break;
+          case 79: str=str+String.fromCharCode(66); break;
+          case 80: str=str+String.fromCharCode(67); break;
+          case 81: str=str+String.fromCharCode(68); break;
+          case 82: str=str+String.fromCharCode(69); break;
+          case 83: str=str+String.fromCharCode(70); break;
+          case 84: str=str+String.fromCharCode(71); break;
+          case 85: str=str+String.fromCharCode(72); break;
+          case 86: str=str+String.fromCharCode(73); break;
+          case 87: str=str+String.fromCharCode(74); break;
+          case 88: str=str+String.fromCharCode(75); break;
+          case 89: str=str+String.fromCharCode(76); break;
+          case 90: str=str+String.fromCharCode(77); break;
+      }      
+    }
+    else{ 
+      str=str+String.fromCharCode(code);      
+    }
+  }  
+  str = str.slice(tamanho*(-1));
+  return str;
+}
+
 $(document).ready(function(){             
   $('#fade-in-1').fadeIn('slow', function(){
     $('#anim2').addClass('animated bounceInLeft').css('opacity','1');
@@ -145,6 +190,10 @@ $(document).ready(function(){
 
   $("#buttonInvert").click(function(){
     $("#buttonInvert").parent().siblings().append("<h2>The reverse of "+$("#invertString").val()+" is: "+reverseString($("#invertString").val()) +"</h2>"); 
+  })  
+  
+  $("#cryptButton").click(function(){
+    $("#cryptButton").parent().siblings().append("<h2>The encrypted is "+rot13($("#cryptString").val()) +"</h2>"); 
   })  
 
   $("#buttonFactorialize").click(function(){

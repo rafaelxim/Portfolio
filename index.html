@@ -29,7 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/1f4e70821c.js"></script>
         <script src="js/myjs.js"> </script>
     </head>
@@ -199,6 +199,64 @@
             </div>                            
         </div>
         <div class="modal-footer">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modal7 -->
+<div id="modal7" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">PHP CRUD</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/phpcrud2.jpg" >
+                </div>
+                <div class="col-md-6">
+                    <p>A simple CRUD PHP Oriented to Objects page with MySQL database. Front with Bootstrap and Material Kit @ Creative Tim.  </p>
+                    <br /><i id="code-icon" class="fa fa-code text-center" aria-hidden="true"></i>
+                    <p>  HTML - CSS - Jquery - Bootstrap - PHP - MySQL </p>
+                    <p><a href="http://rherculano.hol.es/crudphp" target="_blank"><button class="btn bt-block" id="access-button">View Page<i class="fa fa-github" aria-hidden="true"></i></button></a></p>
+                    <p><a href="https://github.com/rafaelxim/Mmorpg_got" target="_blank"><button id="github-button" class="btn bt-block">View code on Github <i class="fa fa-github" aria-hidden="true"></i></button></a></p>
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer">
+            <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modalCrypt -->
+<div id="modalCrypt" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Encryption</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    Insert a string (ONLY UPPER CASES):
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="cryptString" placeholder="String">
+                    <button type="button" id="cryptButton" class="btn btn-success">Encrypt</button>
+                      
+                </div>
+            </div>                            
+        </div>
+        <div class="modal-footer ">
             <i data-dismiss="modal" class="fa fa-times aria-hidden="true"></i>
         </div>
     </div>
@@ -457,11 +515,12 @@
 
     </div>
 
-    <!-- /.row -->
+    
 
     <!-- Project One -->
 
-    <div class="row projects-row">
+    <div class="row"> 
+    
         <div class="prj">
             <div class="col-md-3">                
                 <img data-toggle="modal" data-target="#modal1" id="fade-in-1" class="img-responsive img_com_bordas" src="assets/gf.JPG" alt="">                
@@ -483,13 +542,10 @@
                 <span class="view_project" data-toggle="modal" data-target="#modal2">View Project <i class="fa fa-code"></i></span>
             </div>
         </div>
-
-    </div> 
+    </div>
     <hr>  
-    
-    <!-- Project Three -->
-    <div id="anim5" class="row">
-        <div class="prj">
+    <div class="row" id="anim5">
+       <div class="prj">
             <div class="col-md-3">               
                 <img data-toggle="modal" data-target="#modal3" class="img-responsive img_com_bordas" src="assets/restaurante.JPG" alt="">                
             </div>
@@ -499,7 +555,6 @@
                 <span class="view_project" data-toggle="modal" data-target="#modal3">View Project <i class="fa fa-code"></i></span>
             </div>
         </div>
-        <!-- Project Four -->  
         <div class="prj">  
             <div class="col-md-3">                
                 <img data-toggle="modal" data-target="#modal4" class="img-responsive img_com_bordas" src="assets/cidadedopapel.JPG" alt="">                
@@ -510,10 +565,9 @@
                 <span class="view_project" data-toggle="modal" data-target="#modal4">View Project <i class="fa fa-code"></i></span>
             </div>
         </div>
-    </div>  
-    <hr> 
-    <!-- Project Five -->
-    <div  id="anim6" class="row last-row">
+    </div>
+        <hr> 
+    <div class="row" id="anim6"> 
         <div class="prj">
             <div class="col-md-3">              
                 <img data-toggle="modal" data-target="#modal5" class="img-responsive img_com_bordas" src="assets/leilao.JPG" alt="">                
@@ -523,9 +577,6 @@
                 <span class="view_project" data-toggle="modal" data-target="#modal5">View Project <i class="fa fa-code"></i></span>
             </div>
         </div>
-
-
-        <!-- Project Six -->  
         <div class="prj">
             <div class="col-md-3">                
                 <img data-toggle="modal" data-target="#modal6" class="img-responsive img_com_bordas" src="assets/got.jpg" alt="">               
@@ -536,9 +587,21 @@
                 <span class="view_project" data-toggle="modal" data-target="#modal6">View Project <i class="fa fa-code"></i></span>
             </div>
         </div>
-        <!-- modal -->
     </div>
-    <!-- /.container -->        
+        <hr>
+    <div class="row">      
+        <div class="prj">
+            <div class="col-md-3">                
+                <img data-toggle="modal" data-target="#modal7" class="img-responsive img_com_bordas" src="assets/phpcrud.jpg" alt="">               
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo_projeto">PHP CRUD</h3>
+                <h4>PHP</h4>                  
+                <span class="view_project" data-toggle="modal" data-target="#modal7">View Project <i class="fa fa-code"></i></span>
+            </div>
+        </div>
+    </div>
+    </div> 
 </div>
 <div class="transition"></div>
 <div class="row skills">
@@ -672,6 +735,12 @@
         <p class="text-center"> Title Case Sentence </p>
         <p class="text-center"><i class="fa fa-black-tie" aria-hidden="true"></i></p>
     </div>
+</div>
+<div class="col-md-3">
+<div  data-toggle="modal" data-target="#modalCrypt" class="jscripttool hvr-back-pulse">
+    <p class="text-center"> Crypt/ Uncrypt </p>
+    <p class="text-center"><i class="fa fa-exchange" aria-hidden="true"></i></p>
+</div>
 </div>
 </div>
 
