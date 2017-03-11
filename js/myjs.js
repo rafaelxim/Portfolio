@@ -143,22 +143,10 @@ function rot13(str) { // LBH QVQ VG!
 }
 
 $(document).ready(function(){             
-  $('#fade-in-1').fadeIn('slow', function(){
-    $('#anim2').addClass('animated bounceInLeft').css('opacity','1');
-    $('#anim2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      $('#anim3').addClass('animated flipInX').css('opacity','1');                                            
-    });
-  }); 
-  $('#anim3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $('#anim3').removeClass('animated flipInX'); 
-    $('#anim4').addClass('animated slideInRight').css('opacity','1');
-  });      
-  $('#anim4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $('#anim5').addClass('animated zoomIn').css('opacity','1');
-  })   
-  $('#anim5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $('#anim6').addClass('animated fadeInUp').css('opacity','1');
-  }) 
+  
+  $('.anim1').addClass('animated bounceInRight').css('opacity','1');
+  $('.anim2').addClass('animated bounceInLeft').css('opacity','1');
+     
   $('.btn').hover(function(){
     $(this).addClass('animated flash');
   },function(){

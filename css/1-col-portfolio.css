@@ -28,7 +28,7 @@ footer {
 #fade-in-1{
 	display: none;
 }
-#anim2, #anim3, #anim4, #anim5, #anim6{
+.anim1, .anim2{
 	opacity: 0;
 }
 #social{	
@@ -106,8 +106,8 @@ a, a:hover, a:focus, a:visited{
 .img_com_bordas{
 	border-radius: 15px;
 
-	-webkit-filter: saturate(0.1) drop-shadow(5px 5px 2px #ca8404);
-	filter: saturate(0.1) drop-shadow(5px 5px 2px grey); 
+	/*-webkit-filter: saturate(0.1) drop-shadow(5px 5px 2px #ca8404);
+	filter: saturate(0.1) drop-shadow(5px 5px 2px grey); */
 	
 }
 .transition{
