@@ -1,3 +1,12 @@
+
+function showPage() {
+  $(".circ").hide();
+  $("#page").show();
+}
+
+
+
+
 function reverseString(str) {
 
   var sepString= str.split('');
@@ -144,6 +153,10 @@ function rot13(str) { // LBH QVQ VG!
 
 $(document).ready(function(){             
   
+  setTimeout(showPage, 6000);
+
+
+
   $('.anim1').addClass('animated bounceInRight').css('opacity','1');
   $('.anim2').addClass('animated bounceInLeft').css('opacity','1');
      
